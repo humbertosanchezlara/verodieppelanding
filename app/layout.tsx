@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Software Composer LP - Cursor Template",
-  description: "Create stunning landing pages in minutes with just 3 prompts. Save thousands on design and development with our Cursor-powered template.",
+  title: "Vero Dieppe - Psicología | Compás Mental",
+  description: "Servicios psicológicos profesionales para ayudarte a ti y a tu familia a vivir una vida mejor. Terapia individual, consejería familiar y terapia de parejas.",
 };
 
 export default function RootLayout({
@@ -15,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={inter.className}>{children}</body>
+    <html lang="es">
+      <head>
+        <link rel="icon" href="/images/logo.jpg" />
+        <meta name="theme-color" content="#8B95C9" />
+      </head>
+      <body className={`${inter.className} bg-white`}>{children}</body>
     </html>
   );
 }
